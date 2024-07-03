@@ -31,3 +31,5 @@ const ProductDetails = ({ params }: { params: { productId: string }}) => {
 }
 
 export default ProductDetails
+
+

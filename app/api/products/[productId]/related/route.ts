@@ -20,6 +20,7 @@ export const GET = async (req: NextRequest, { params }: { params: { productId: s
       _id: { $ne: product._id } // Exclude the current product
     })
 
+
     if (!relatedProducts) {
       return new NextResponse(JSON.stringify({ message: "No related products found" }), { status: 404 })
     }
