@@ -9,12 +9,14 @@ import { ToasterProvider } from "@/lib/ToasterProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 export const metadata: Metadata = {
   title: "Borcelle - Panel de control",
   description: "Panel de control de datos",
 };
 
 export default function RootLayout({
+  
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -24,10 +26,13 @@ export default function RootLayout({
 
     
     <ClerkProvider>
+ 
       <html lang="en">
+       
           
         <body className={inter.className}>
 
+        
      
           <ToasterProvider/>
       <div className="flex max-lg:flex-col text-grey-1">
@@ -36,9 +41,10 @@ export default function RootLayout({
           <TopBar/>
          <div className="flex-1"> {children}</div>
          </div>
-          
+       
         </body>
       </html>
+     
     </ClerkProvider>
   );
 }
