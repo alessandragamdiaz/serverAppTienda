@@ -27,8 +27,8 @@ export const GET = async (
       status: 200,
       headers: {
         "Access-Control-Allow-Origin": "https://comercio-mayorista.vercel.app",
-        "Access-Control-Allow-Methods": "GET",
-        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
     });
   } catch (err) {
